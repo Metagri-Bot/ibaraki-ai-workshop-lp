@@ -9,15 +9,15 @@ export default function ApplicationForm() {
     email: '',
     phone: '',
     affiliation: '',
-    age: '',
+    age_group: '',
     prefecture: '',
-    participationType: '',
-    programmingExperience: '',
-    aiToolExperience: '',
-    interests: [] as string[],
+    participation_type: '',
+    programming_experience: '',
+    ai_tool_experience: '',
+    interest_fields: [] as string[],
     motivation: '',
     questions: '',
-    consent: false,
+    privacy_agreement: false,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -28,15 +28,29 @@ export default function ApplicationForm() {
     setIsSubmitting(true);
 
     try {
+      // フォームデータをURLSearchParams形式に変換
+      const submitData = new URLSearchParams();
+      submitData.append('name', formData.name);
+      submitData.append('furigana', formData.furigana);
+      submitData.append('email', formData.email);
+      submitData.append('phone', formData.phone);
+      submitData.append('affiliation', formData.affiliation);
+      submitData.append('age_group', formData.age_group);
+      submitData.append('prefecture', formData.prefecture);
+      submitData.append('participation_type', formData.participation_type);
+      submitData.append('programming_experience', formData.programming_experience);
+      submitData.append('ai_tool_experience', formData.ai_tool_experience);
+      submitData.append('interest_fields', formData.interest_fields.join(', '));
+      submitData.append('motivation', formData.motivation);
+      submitData.append('questions', formData.questions);
+      submitData.append('privacy_agreement', formData.privacy_agreement ? '同意する' : '');
+
       const response = await fetch(
         'https://script.google.com/macros/s/AKfycbyDhe00p92k7fhOnl8Qv8jmtQOtoAGb4hx6EEoZImSAnCpsXYM9Lu0ej66U3rLANNOE/exec',
         {
           method: 'POST',
           mode: 'no-cors',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
+          body: submitData,
         }
       );
 
@@ -48,15 +62,15 @@ export default function ApplicationForm() {
         email: '',
         phone: '',
         affiliation: '',
-        age: '',
+        age_group: '',
         prefecture: '',
-        participationType: '',
-        programmingExperience: '',
-        aiToolExperience: '',
-        interests: [],
+        participation_type: '',
+        programming_experience: '',
+        ai_tool_experience: '',
+        interest_fields: [],
         motivation: '',
         questions: '',
-        consent: false,
+        privacy_agreement: false,
       });
     } catch (error) {
       console.error('Form submission error:', error);
@@ -71,14 +85,14 @@ export default function ApplicationForm() {
 
     if (type === 'checkbox') {
       const checked = (e.target as HTMLInputElement).checked;
-      if (name === 'consent') {
+      if (name === 'privacy_agreement') {
         setFormData(prev => ({ ...prev, [name]: checked }));
       } else {
         setFormData(prev => ({
           ...prev,
-          interests: checked
-            ? [...prev.interests, value]
-            : prev.interests.filter(i => i !== value),
+          interest_fields: checked
+            ? [...prev.interest_fields, value]
+            : prev.interest_fields.filter(i => i !== value),
         }));
       }
     } else {
@@ -196,8 +210,8 @@ export default function ApplicationForm() {
                   年齢層 <span className="text-accent-yellow">*</span>
                 </label>
                 <select
-                  name="age"
-                  value={formData.age}
+                  name="age_group"
+                  value={formData.age_group}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-accent-yellow"
@@ -233,8 +247,8 @@ export default function ApplicationForm() {
                   参加形態 <span className="text-accent-yellow">*</span>
                 </label>
                 <select
-                  name="participationType"
-                  value={formData.participationType}
+                  name="participation_type"
+                  value={formData.participation_type}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-accent-yellow"
@@ -251,8 +265,8 @@ export default function ApplicationForm() {
                   プログラミング経験 <span className="text-accent-yellow">*</span>
                 </label>
                 <select
-                  name="programmingExperience"
-                  value={formData.programmingExperience}
+                  name="programming_experience"
+                  value={formData.programming_experience}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-accent-yellow"
@@ -271,8 +285,8 @@ export default function ApplicationForm() {
                   AI生成ツール使用経験 <span className="text-accent-yellow">*</span>
                 </label>
                 <select
-                  name="aiToolExperience"
-                  value={formData.aiToolExperience}
+                  name="ai_tool_experience"
+                  value={formData.ai_tool_experience}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-accent-yellow"
@@ -295,9 +309,9 @@ export default function ApplicationForm() {
                     <label key={interest} className="flex items-center gap-3 text-white cursor-pointer hover:text-accent-yellow transition-colors">
                       <input
                         type="checkbox"
-                        name="interests"
+                        name="interest_fields"
                         value={interest}
-                        checked={formData.interests.includes(interest)}
+                        checked={formData.interest_fields.includes(interest)}
                         onChange={handleChange}
                         className="w-5 h-5 rounded border-white/30 text-accent-yellow focus:ring-accent-yellow"
                       />
@@ -342,8 +356,8 @@ export default function ApplicationForm() {
                 <label className="flex items-start gap-3 text-white cursor-pointer">
                   <input
                     type="checkbox"
-                    name="consent"
-                    checked={formData.consent}
+                    name="privacy_agreement"
+                    checked={formData.privacy_agreement}
                     onChange={handleChange}
                     required
                     className="w-5 h-5 mt-1 rounded border-white/30 text-accent-yellow focus:ring-accent-yellow flex-shrink-0"
