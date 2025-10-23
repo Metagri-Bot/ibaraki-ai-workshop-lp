@@ -6,7 +6,7 @@ export default function Hero() {
       {/* 背景画像 */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_v2.png"
+          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_LP.png"
           alt="茨城の自然とデジタル"
           fill
           className="object-cover opacity-20"
