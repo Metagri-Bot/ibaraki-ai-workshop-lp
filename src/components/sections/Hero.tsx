@@ -2,18 +2,26 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
+     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
       {/* 背景画像 */}
       <div className="absolute inset-0 z-0">
+        {/* スマホ用画像 (mdブレークポイント未満で表示) */}
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_LPv2.png"
+          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_LP_mobile.png" // ← スマホ用の画像URLに変更
           alt="茨城の自然とデジタル"
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-20 md:hidden" // ← md以上で非表示
+          priority
+        />
+        {/* PC用画像 (mdブレークポイント以上で表示) */}
+        <Image
+          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_LPv3.png"
+          alt="茨城の自然とデジタル"
+          fill
+          className="object-cover opacity-20 hidden md:block" // ← md未満で非表示、md以上で表示
           priority
         />
       </div>
-
       {/* コンテンツ */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
@@ -34,7 +42,7 @@ export default function Hero() {
           </p>
           <div className="space-y-2 text-left md:text-center">
             <p className="text-base md:text-lg">
-              <strong>日程:</strong> 2026年1月末~2月上旬（※日程確定次第更新）
+              <strong>日程:</strong> 2026年1月末～2月上旬（※日程確定次第更新）
             </p>
             <p className="text-base md:text-lg">
               <strong>会場:</strong> 鯉渕学園農業栄養専門学校（茨城県水戸市）

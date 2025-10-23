@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'MetagriLabo',
     images: [
       {
-        url: 'http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki.png',
+        url: 'http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_v2.png',
         width: 1200,
         height: 630,
         alt: 'ワーケーション型 地方創生×AIハッカソン in 茨城 メインビジュアル',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ワーケーション型 地方創生×AIハッカソン in 茨城',
     description: '茨城の魅力ある地域に滞在しながら、AIで課題解決',
-    images: ['http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki.png'],
+    images: ['http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_v2.png'],
   },
 
   // ファビコン
