@@ -25,8 +25,7 @@ export default function KickoffSeminar() {
             <div className="space-y-4">
               <div>
                 <p className="text-sm text-white/70 mb-1">日程</p>
-                <p className="text-xl font-bold">2026年1月末~2月上旬</p>
-                <p className="text-sm text-white/80">※具体的な日時は決定次第更新</p>
+                <p className="text-xl font-bold">2026年2月5日（予定）</p>
               </div>
               <div>
                 <p className="text-sm text-white/70 mb-1">時間</p>

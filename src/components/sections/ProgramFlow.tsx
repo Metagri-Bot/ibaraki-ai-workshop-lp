@@ -2,7 +2,7 @@ const phases = [
   {
     phase: 'Phase 1',
     title: '課題ヒアリング&キックオフ',
-    period: '2026年1月末~2月上旬',
+    period: '2026年2月5日（予定）',
     icon: '🎯',
     items: [
       '地域課題の公募・選定',

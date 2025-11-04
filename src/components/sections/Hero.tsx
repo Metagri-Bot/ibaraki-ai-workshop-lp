@@ -34,7 +34,7 @@ export default function Hero() {
           </p>
           <div className="space-y-2 text-left md:text-center">
             <p className="text-base md:text-lg">
-              <strong>日程:</strong> 2026年1月末~2月上旬（※日程確定次第更新）
+              <strong>日程:</strong> 2026年2月5日（予定）
             </p>
             <p className="text-base md:text-lg">
               <strong>会場:</strong> 鯉渕学園農業栄養専門学校（茨城県水戸市）
