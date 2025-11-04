@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | キックオフセミナー参加者募集',
-  description: '茨城の魅力ある地域に滞在しながら、AIで課題解決。プログラミング未経験でも参加できるVibe Coding × ワーケーション型ハッカソン。2026年1月末キックオフセミナー開催！',
+  description: '茨城の魅力ある地域に滞在しながら、AIで課題解決。プログラミング未経験でも参加できるVibe Coding × ワーケーション型ハッカソン。2026年2月5日キックオフセミナー開催！',
   keywords: ['AI', 'ハッカソン', '茨城', 'ワーケーション', '地域課題', '生成AI', 'Vibe Coding', '地方創生'],
 
   // Canonical URL
