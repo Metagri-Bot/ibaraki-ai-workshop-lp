@@ -13,7 +13,7 @@ const phases = [
   {
     phase: 'Phase 2',
     title: 'ワーケーション&オンライン参加型ハッカソン',
-    period: '2026年2月~4月上旬',
+    period: '2026年2月～4月上旬',
     icon: '💻',
     items: [
       '茨城の各会場に滞在しながら開発（現地参加）',
@@ -36,7 +36,7 @@ const phases = [
   {
     phase: 'Phase 4',
     title: '実証実験&社会実装',
-    period: '2026年5月~',
+    period: '2026年5月～',
     icon: '🚀',
     items: [
       '現場での実証&改善',

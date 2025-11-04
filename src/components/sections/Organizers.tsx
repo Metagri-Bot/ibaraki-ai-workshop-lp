@@ -4,7 +4,7 @@ const organizers = [
   {
     type: '主催',
     name: '株式会社生涯現役計画',
-    logo: 'https://gen-eki.co.jp/wp-content/themes/gen-eki/assets/img/common/logo.svg',
+    logo: 'https://gen-eki.co.jp/wp-content/uploads/2025/04/cpp-logo-main.svg',
     url: 'https://gen-eki.co.jp/',
     description: '地域課題解決とキャリア支援を通じて、生涯現役社会の実現を目指す',
   },
@@ -18,7 +18,7 @@ const organizers = [
   {
     type: '協力',
     name: '鯉渕学園農業栄養専門学校',
-    logo: 'https://www.koibuchi.ac.jp/common/images/header_logo.png',
+    logo: 'https://www.koibuchi.ac.jp/assets/images/logo/koibuchi.svg',
     url: 'https://www.koibuchi.ac.jp/',
     description: '農業と栄養の専門教育を通じて、地域社会に貢献する人材を育成',
   },

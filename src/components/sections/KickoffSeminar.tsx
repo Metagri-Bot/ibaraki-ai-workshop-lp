@@ -29,7 +29,7 @@ export default function KickoffSeminar() {
               </div>
               <div>
                 <p className="text-sm text-white/70 mb-1">時間</p>
-                <p className="text-xl font-bold">13:00～16:00（3時間）</p>
+                <p className="text-xl font-bold">13:00～15:00（2時間）</p>
               </div>
               <div>
                 <p className="text-sm text-white/70 mb-1">会場</p>
