@@ -41,12 +41,11 @@ export default function KickoffSeminar() {
             <div className="space-y-4">
               <div>
                 <p className="text-sm text-white/70 mb-1">参加形態</p>
-                <p className="text-xl font-bold">ハイブリッド開催</p>
-                <p className="text-sm text-white/80">現地参加 or オンライン参加（Zoom）</p>
+                <p className="text-xl font-bold">現地参加</p>
               </div>
               <div>
                 <p className="text-sm text-white/70 mb-1">定員</p>
-                <p className="text-xl font-bold">現地30名 / オンライン50名</p>
+                <p className="text-xl font-bold">30名</p>
               </div>
               <div className="bg-accent-yellow text-base-darkGray rounded-xl p-4 text-center">
                 <p className="text-sm mb-1">参加費</p>
@@ -126,14 +125,6 @@ export default function KickoffSeminar() {
                 〒319-0323 茨城県水戸市鯉淵町5965
               </p>
             </div>
-          </div>
-
-          <div className="mt-6 bg-accent-blue/20 rounded-xl p-4 border border-accent-blue/40">
-            <p className="font-bold mb-2">オンライン参加の方へ</p>
-            <p className="text-sm text-white/90">
-              Zoomの接続URLは、お申込み後にメールでお送りします。<br />
-              開始10分前から入室可能です。
-            </p>
           </div>
         </div>
       </div>

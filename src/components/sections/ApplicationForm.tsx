@@ -255,7 +255,6 @@ export default function ApplicationForm() {
                 >
                   <option value="" className="text-gray-900">選択してください</option>
                   <option value="現地参加" className="text-gray-900">現地参加</option>
-                  <option value="オンライン参加" className="text-gray-900">オンライン参加</option>
                 </select>
               </div>
 
