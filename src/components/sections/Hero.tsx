@@ -48,7 +48,7 @@ export default function Hero() {
               <strong>会場:</strong> 鯉渕学園農業栄養専門学校（茨城県水戸市）
             </p>
             <p className="text-base md:text-lg">
-              <strong>参加:</strong> 現地 or オンライン（ハイブリッド開催）
+              <strong>参加:</strong> 現地参加
             </p>
             <p className="text-2xl md:text-3xl font-bold text-accent-yellow mt-4">
               参加費：無料
