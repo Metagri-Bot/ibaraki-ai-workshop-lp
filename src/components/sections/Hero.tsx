@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         {/* スマホ用画像 (mdブレークポイント未満で表示) */}
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_LP_mobile.png" // ← スマホ用の画像URLに変更
+          src="http://metagri-labo.com/wp-content/uploads/2025/12/7c650964bb610c2972416d9a7e6554a6.jpeg" // ← スマホ用の画像URLに変更
           alt="茨城の自然とデジタル"
           fill
           className="object-cover opacity-20 md:hidden" // ← md以上で非表示
@@ -15,7 +15,7 @@ export default function Hero() {
         />
         {/* PC用画像 (mdブレークポイント以上で表示) */}
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_LPv3.png"
+          src="http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg"
           alt="茨城の自然とデジタル"
           fill
           className="object-cover opacity-20 hidden md:block" // ← md未満で非表示、md以上で表示

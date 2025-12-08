@@ -34,7 +34,7 @@ const structuredData = {
       "addressCountry": "JP"
     }
   },
-  "image": "http://metagri-labo.com/wp-content/uploads/2025/10/AI_Hackathon_Ibaraki_v2.png",
+  "image": "http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg",
   "organizer": [
     {
       "@type": "Organization",
