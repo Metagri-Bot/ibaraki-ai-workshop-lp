@@ -2,28 +2,30 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
+     <section className="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
       {/* 背景画像 */}
       <div className="absolute inset-0 z-0">
         {/* スマホ用画像 (mdブレークポイント未満で表示) */}
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/12/7c650964bb610c2972416d9a7e6554a6.jpeg" // ← スマホ用の画像URLに変更
-          alt="茨城の自然とデジタル"
+          src="http://metagri-labo.com/wp-content/uploads/2025/12/7c650964bb610c2972416d9a7e6554a6.jpeg"
+          alt="茨城の自然とデジタル - ワーケーション型AIハッカソン"
           fill
-          className="object-cover opacity-20 md:hidden" // ← md以上で非表示
+          className="object-cover object-top md:hidden"
           priority
         />
         {/* PC用画像 (mdブレークポイント以上で表示) */}
         <Image
           src="http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg"
-          alt="茨城の自然とデジタル"
+          alt="茨城の自然とデジタル - ワーケーション型AIハッカソン"
           fill
-          className="object-cover opacity-20 hidden md:block" // ← md未満で非表示、md以上で表示
+          className="object-cover hidden md:block"
           priority
         />
       </div>
+      {/* グラデーションオーバーレイ - 下部のみ暗くしてテキスト視認性確保 */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/80 via-black/40 to-transparent md:bg-gradient-to-t md:from-black/70 md:via-black/30 md:to-transparent" />
       {/* コンテンツ */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pb-8 md:pb-0 md:pt-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           茨城の魅力ある地域に滞在しながら、
           <br />

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | キックオフセミナー参加者募集',
-  description: '茨城の魅力ある地域に滞在しながら、AIで課題解決。プログラミング未経験でも参加できるVibe Coding × ワーケーション型ハッカソン。2026年2月5日キックオフセミナー開催！',
-  keywords: ['AI', 'ハッカソン', '茨城', 'ワーケーション', '地域課題', '生成AI', 'Vibe Coding', '地方創生'],
+  title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | Z世代・非エンジニア歓迎',
+  description: '【Z世代・非エンジニア歓迎】茨城でワーケーションしながらAIハッカソンに挑戦！生成AIとVibe Codingで地域課題を解決。プログラミング未経験OK。2026年2月キックオフセミナー開催。AIスキルを身につけながら地方創生に貢献しよう。',
+  keywords: ['AI', 'ハッカソン', '茨城', 'ワーケーション', '地域課題', '生成AI', 'Vibe Coding', '地方創生', 'Z世代', '非エンジニア', 'AIハッカソン', 'プログラミング初心者', '茨城観光', 'リモートワーク', 'デジタル人材'],
 
   // Canonical URL
   alternates: {
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
 
   // OGP設定
   openGraph: {
-    title: 'ワーケーション型 地方創生×AIハッカソン in 茨城',
-    description: '茨城の魅力ある地域に滞在しながら、AIで課題解決',
+    title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | Z世代・非エンジニア歓迎',
+    description: '【Z世代・非エンジニア歓迎】茨城でワーケーションしながらAIハッカソンに挑戦！生成AIで地域課題を解決',
     url: 'https://ibaraki-ai-hackathon.metagri-labo.com/',
     siteName: 'MetagriLabo',
     images: [
@@ -32,8 +33,8 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'ワーケーション型 地方創生×AIハッカソン in 茨城',
-    description: '茨城の魅力ある地域に滞在しながら、AIで課題解決',
+    title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | Z世代・非エンジニア歓迎',
+    description: '【Z世代・非エンジニア歓迎】茨城でワーケーションしながらAIハッカソンに挑戦！生成AIで地域課題を解決',
     images: ['http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg'],
   },
 
@@ -69,6 +70,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z128H9EBES"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z128H9EBES');
+          `}
+        </Script>
+      </head>
       <body className="font-sans antialiased">
         {children}
       </body>
