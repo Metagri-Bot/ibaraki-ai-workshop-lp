@@ -4,21 +4,23 @@ export default function Hero() {
   return (
     <section className="pt-16">
       {/* キービジュアル - 独立したエリア */}
-      <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
-        {/* スマホ用画像 (mdブレークポイント未満で表示) */}
+      {/* スマホ用: 9:16縦型 */}
+      <div className="relative w-full aspect-[9/16] md:hidden">
         <Image
           src="http://metagri-labo.com/wp-content/uploads/2025/12/7c650964bb610c2972416d9a7e6554a6.jpeg"
           alt="茨城の自然とデジタル - ワーケーション型AIハッカソン"
           fill
-          className="object-cover object-center md:hidden"
+          className="object-cover object-center"
           priority
         />
-        {/* PC用画像 (mdブレークポイント以上で表示) */}
+      </div>
+      {/* PC用: 21:9横型 */}
+      <div className="relative w-full aspect-[21/9] hidden md:block">
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg"
+          src="http://metagri-labo.com/wp-content/uploads/2025/12/bb79118101a1a97ac60e90a1b182020c.jpeg"
           alt="茨城の自然とデジタル - ワーケーション型AIハッカソン"
           fill
-          className="object-cover object-center hidden md:block"
+          className="object-cover object-center"
           priority
         />
       </div>
