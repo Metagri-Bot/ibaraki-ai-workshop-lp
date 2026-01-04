@@ -7,9 +7,10 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'コンテストについて', href: '#about' },
-    { label: 'キックオフセミナー', href: '#kickoff' },
-    { label: 'プログラムの流れ', href: '#flow' },
+    { label: 'Vibe Codingとは', href: '#vibecoding' },
+    { label: '体験内容', href: '#workshop' },
+    { label: 'タイムテーブル', href: '#schedule' },
+    { label: '開催概要', href: '#overview' },
     { label: 'FAQ', href: '#faq' },
   ];
 
@@ -19,11 +20,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* ロゴ */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
-              AI
+            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm">
+              VC
             </div>
             <span className="font-bold text-base-darkGray hidden sm:block">
-              茨城AIハッカソン
+              Vibe Codingワークショップ
             </span>
           </Link>
 
@@ -33,14 +34,14 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-base-darkGray hover:text-primary font-medium transition-colors"
+                className="text-base-darkGray hover:text-accent-orange font-medium transition-colors"
               >
                 {item.label}
               </a>
             ))}
             <a
               href="#application"
-              className="bg-primary hover:bg-primary-dark text-white font-bold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105"
+              className="bg-accent-orange hover:bg-accent-yellow text-base-darkGray font-bold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105"
             >
               申し込む
             </a>
@@ -86,7 +87,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-base-darkGray hover:text-primary font-medium px-4 py-2 rounded hover:bg-gray-100 transition-colors"
+                  className="text-base-darkGray hover:text-accent-orange font-medium px-4 py-2 rounded hover:bg-gray-100 transition-colors"
                 >
                   {item.label}
                 </a>
@@ -94,7 +95,7 @@ export default function Header() {
               <a
                 href="#application"
                 onClick={() => setIsMenuOpen(false)}
-                className="bg-primary hover:bg-primary-dark text-white font-bold px-6 py-3 rounded-full text-center transition-all duration-300"
+                className="bg-accent-orange hover:bg-accent-yellow text-base-darkGray font-bold px-6 py-3 rounded-full text-center transition-all duration-300"
               >
                 申し込む
               </a>
