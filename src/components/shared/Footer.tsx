@@ -9,7 +9,7 @@ export default function Footer() {
               Vibe Coding<span className="text-accent-orange">ワークショップ</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              プログラミング不要。AIと話すだけで、<br />
+              プログラミング不要。AIと対話するだけで、<br />
               あなたのアイデアを形にする新体験。
             </p>
           </div>

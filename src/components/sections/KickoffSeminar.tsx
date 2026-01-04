@@ -1,7 +1,7 @@
 const features = [
   {
     icon: '🤖',
-    title: '最新AIツール「Gemini Build」を体験',
+    title: '最新AIツール「Gemini」を体験',
     description: 'Googleアカウントがあれば誰でも使える最新ツールを使用します。',
     color: 'from-blue-500 to-cyan-400',
   },

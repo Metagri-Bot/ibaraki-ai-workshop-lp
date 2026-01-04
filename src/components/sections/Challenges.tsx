@@ -79,7 +79,7 @@ export default function Challenges() {
               Googleアカウントをお持ちの方
             </p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              ※当日はGoogleのツール（Gemini Build）を使用します。<br />
+              ※当日はGoogleのツール（Gemini）を使用します。<br />
               アカウントのパスワード等、ログインできる状態でお越しください。
             </p>
           </div>

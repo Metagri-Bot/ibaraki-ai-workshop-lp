@@ -3,8 +3,8 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけでアプリを作る',
-  description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る「Vibe Coding」を2時間で体験。Google Gemini活用。2026年2月5日開催。初心者歓迎・参加費無料。',
+  title: 'Vibe Codingワークショップ | プログラミング不要・AIと対話するだけでアプリを作る',
+  description: '【40〜50代からのリスキリング】プログラミング不要。AIと対話するだけでアプリを作る「Vibe Coding」を2時間で体験。Google Gemini活用。2026年2月5日開催。初心者歓迎・参加費無料。',
   keywords: ['Vibe Coding', 'AI', 'ワークショップ', 'プログラミング不要', 'ノーコード', 'リスキリング', '40代', '50代', 'Google Gemini', 'AI体験', '茨城', '水戸', '初心者歓迎', 'アプリ開発', 'ハンズオン'],
 
   // Canonical URL
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   // OGP設定
   openGraph: {
     title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
-    description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
+    description: '【40〜50代からのリスキリング】プログラミング不要。AIと対話するだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
     url: 'https://ibaraki-ai-hackathon.metagri-labo.com/',
     siteName: 'MetagriLabo',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
-    description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
+    description: '【40〜50代からのリスキリング】プログラミング不要。AIと対話するだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
     images: ['http://metagri-labo.com/wp-content/uploads/2026/01/0a36b3f986ca134fa88b2c50dda775c1.png'],
   },
 

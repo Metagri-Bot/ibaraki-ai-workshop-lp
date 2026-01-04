@@ -14,7 +14,7 @@ const schedule = [
   {
     time: '13:40〜',
     title: '【体験】ハンズオンタイム',
-    description: '実際に「Gemini Build」を触ってみましょう。テンプレートがあるので安心です。',
+    description: '実際に「Gemini」を触ってみましょう。テンプレートがあるので安心です。',
     icon: '🛠️',
   },
   {
