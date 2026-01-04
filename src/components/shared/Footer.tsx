@@ -1,15 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 border-t border-white/10">
+    <footer className="bg-base-darkGray border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* ロゴ・説明 */}
           <div>
             <h3 className="text-2xl font-bold text-white mb-4">
-              茨城AIハッカソン <span className="text-green-400">2026</span>
+              Vibe Coding<span className="text-accent-orange">ワークショップ</span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              地域課題解決とAI技術で、茨城の未来を創造する
+              プログラミング不要。AIと話すだけで、<br />
+              あなたのアイデアを形にする新体験。
             </p>
           </div>
 
@@ -18,22 +19,27 @@ export default function Footer() {
             <h4 className="text-lg font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#about" className="hover:text-green-400 transition-colors">
-                  コンテストについて
+                <a href="#vibecoding" className="hover:text-accent-orange transition-colors">
+                  Vibe Codingとは
                 </a>
               </li>
               <li>
-                <a href="#kickoff" className="hover:text-green-400 transition-colors">
-                  キックオフセミナー
+                <a href="#workshop" className="hover:text-accent-orange transition-colors">
+                  体験内容
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-green-400 transition-colors">
+                <a href="#overview" className="hover:text-accent-orange transition-colors">
+                  開催概要
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-accent-orange transition-colors">
                   よくある質問
                 </a>
               </li>
               <li>
-                <a href="https://metagri-labo.com/contact/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
+                <a href="https://metagri-labo.com/contact/" target="_blank" rel="noopener noreferrer" className="hover:text-accent-orange transition-colors">
                   お問い合わせ
                 </a>
               </li>
@@ -48,7 +54,7 @@ export default function Footer() {
                 href="https://x.com/Metagrilabo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
+                className="w-10 h-10 bg-white/5 hover:bg-accent-orange/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
                 aria-label="Twitter"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -59,7 +65,7 @@ export default function Footer() {
                 href="https://www.instagram.com/metagrilabo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
+                className="w-10 h-10 bg-white/5 hover:bg-accent-orange/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -70,7 +76,7 @@ export default function Footer() {
                 href="https://www.youtube.com/channel/UCAvDULnFToZUnMeMb_Ghhbg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
+                className="w-10 h-10 bg-white/5 hover:bg-accent-orange/20 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/10"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">

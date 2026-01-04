@@ -3,9 +3,9 @@ import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | Z世代・非エンジニア歓迎',
-  description: '【Z世代・非エンジニア歓迎】茨城でワーケーションしながらAIハッカソンに挑戦！生成AIとVibe Codingで地域課題を解決。プログラミング未経験OK。2026年2月キックオフセミナー開催。AIスキルを身につけながら地方創生に貢献しよう。',
-  keywords: ['AI', 'ハッカソン', '茨城', 'ワーケーション', '地域課題', '生成AI', 'Vibe Coding', '地方創生', 'Z世代', '非エンジニア', 'AIハッカソン', 'プログラミング初心者', '茨城観光', 'リモートワーク', 'デジタル人材'],
+  title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけでアプリを作る',
+  description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る「Vibe Coding」を2時間で体験。Google Gemini活用。2026年2月5日開催。初心者歓迎・参加費無料。',
+  keywords: ['Vibe Coding', 'AI', 'ワークショップ', 'プログラミング不要', 'ノーコード', 'リスキリング', '40代', '50代', 'Google Gemini', 'AI体験', '茨城', '水戸', '初心者歓迎', 'アプリ開発', 'ハンズオン'],
 
   // Canonical URL
   alternates: {
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
   // OGP設定
   openGraph: {
-    title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | Z世代・非エンジニア歓迎',
-    description: '【Z世代・非エンジニア歓迎】茨城でワーケーションしながらAIハッカソンに挑戦！生成AIで地域課題を解決',
+    title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
+    description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
     url: 'https://ibaraki-ai-hackathon.metagri-labo.com/',
     siteName: 'MetagriLabo',
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: 'http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg',
         width: 1200,
         height: 630,
-        alt: 'ワーケーション型 地方創生×AIハッカソン in 茨城 メインビジュアル',
+        alt: 'Vibe Codingワークショップ メインビジュアル',
       },
     ],
     locale: 'ja_JP',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'ワーケーション型 地方創生×AIハッカソン in 茨城 | Z世代・非エンジニア歓迎',
-    description: '【Z世代・非エンジニア歓迎】茨城でワーケーションしながらAIハッカソンに挑戦！生成AIで地域課題を解決',
+    title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
+    description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
     images: ['http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg'],
   },
 

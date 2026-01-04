@@ -7,8 +7,6 @@ import KickoffSeminar from '@/components/sections/KickoffSeminar';
 import ProgramFlow from '@/components/sections/ProgramFlow';
 import Challenges from '@/components/sections/Challenges';
 import Benefits from '@/components/sections/Benefits';
-import Venue from '@/components/sections/Venue';
-import Organizers from '@/components/sections/Organizers';
 import FAQ from '@/components/sections/FAQ';
 import ApplicationForm from '@/components/sections/ApplicationForm';
 
@@ -16,21 +14,19 @@ import ApplicationForm from '@/components/sections/ApplicationForm';
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": "ワーケーション型 地方創生×AIハッカソン in 茨城 キックオフセミナー",
-  "description": "茨城の魅力ある地域に滞在しながら、AIで課題解決。プログラミング未経験でも参加できるVibe Coding × ワーケーション型ハッカソン",
-  "startDate": "2026-01-30T13:00:00+09:00",
-  "endDate": "2026-01-30T16:00:00+09:00",
+  "name": "AIでできることを知り、体験する場「Vibe Codingワークショップ」",
+  "description": "プログラミング不要。AIと話すだけ。2026年の新トレンド「Vibe Coding」を体験しよう。あなたのアイデアが、たった2時間で形になるワークショップ。40〜50代からのリスキリングに最適。",
+  "startDate": "2026-02-05T13:00:00+09:00",
+  "endDate": "2026-02-05T15:00:00+09:00",
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
-    "name": "鯉渕学園農業栄養専門学校",
+    "name": "茨城県水戸市内（詳細は申込者にご連絡）",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "鯉淵町5965",
       "addressLocality": "水戸市",
       "addressRegion": "茨城県",
-      "postalCode": "319-0323",
       "addressCountry": "JP"
     }
   },
@@ -74,10 +70,8 @@ export default function Home() {
         <KickoffSeminar />
         <ProgramFlow />
         <Challenges />
-        <Benefits />
-        <Venue />
-        <Organizers />
         <FAQ />
+        <Benefits />
         <ApplicationForm />
       </main>
       <Footer />

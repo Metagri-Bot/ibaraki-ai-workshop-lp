@@ -9,22 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // メインカラー（グリーン系）
+        // メインカラー（濃紺系 - テック感）
         primary: {
-          DEFAULT: '#2D7E4E',  // 深緑
-          light: '#5CB85C',     // 明るい緑
-          dark: '#1F5A36',      // 濃い緑
+          DEFAULT: '#1E3A5F',  // 濃紺
+          light: '#2C5282',     // 明るい濃紺
+          dark: '#0F1F38',      // 深い濃紺
         },
         // アクセントカラー
         accent: {
-          blue: '#4A90E2',      // デジタル感
-          yellow: '#F5A623',    // 活力
+          orange: '#F5A623',    // 温かみのあるオレンジ
+          yellow: '#FFD93D',    // 明るい黄色
         },
         // ベースカラー
         base: {
           white: '#FFFFFF',
           lightGray: '#F7F7F7',
-          darkGray: '#333333',
+          darkGray: '#1A1A2E',  // ダークテーマ用
+          black: '#0D0D1A',     // 黒系
         }
       },
       fontFamily: {

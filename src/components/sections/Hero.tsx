@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="relative w-full aspect-[9/16] md:hidden">
         <Image
           src="http://metagri-labo.com/wp-content/uploads/2025/12/7c650964bb610c2972416d9a7e6554a6.jpeg"
-          alt="茨城の自然とデジタル - ワーケーション型AIハッカソン"
+          alt="AIワークショップ - Vibe Coding体験"
           fill
           className="object-cover object-center"
           priority
@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative w-full aspect-[21/9] hidden md:block">
         <Image
           src="http://metagri-labo.com/wp-content/uploads/2025/12/bb79118101a1a97ac60e90a1b182020c.jpeg"
-          alt="茨城の自然とデジタル - ワーケーション型AIハッカソン"
+          alt="AIワークショップ - Vibe Coding体験"
           fill
           className="object-cover object-center"
           priority
@@ -26,35 +26,46 @@ export default function Hero() {
       </div>
 
       {/* コンテンツエリア - キービジュアルの下 */}
-      <div className="bg-gradient-to-br from-primary to-primary-dark py-12 md:py-16">
+      <div className="bg-gradient-to-br from-primary-dark to-primary py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          {/* メインキャッチコピー */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            茨城の魅力ある地域に滞在しながら、
+            プログラミング不要。
             <br />
-            <span className="text-accent-yellow">AIで課題解決</span>
+            <span className="text-accent-orange">AIと話すだけ。</span>
           </h1>
 
-          <p className="text-lg md:text-2xl mb-8 text-white/90">
-            非エンジニアでも挑戦できる<br className="md:hidden" />
-            Vibe Coding × ワーケーション型ハッカソン
+          {/* サブコピー */}
+          <p className="text-lg md:text-2xl mb-4 text-white/90">
+            2026年の新トレンド<span className="text-accent-yellow font-bold">「Vibe Coding」</span>を体験しよう。
           </p>
+          <p className="text-base md:text-xl mb-8 text-white/80">
+            あなたのアイデアが、たった2時間で形になるワークショップ。
+          </p>
+
+          {/* 権威付け/補足 */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base">
+            <span className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+              初心者歓迎
+            </span>
+            <span className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+              40〜50代からのリスキリング
+            </span>
+            <span className="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+              Google Gemini活用
+            </span>
+          </div>
 
           {/* 開催情報カード */}
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-8 mb-8 max-w-2xl mx-auto border border-white/20">
-            <p className="text-lg md:text-xl font-bold mb-4">
-              キックオフセミナー開催！
-            </p>
             <div className="space-y-2 text-left md:text-center">
               <p className="text-base md:text-lg">
-                <strong>日程:</strong> 2026年2月5日（予定）
+                <strong>日時:</strong> 2026年2月5日（木）13:00〜15:00
               </p>
               <p className="text-base md:text-lg">
-                <strong>会場:</strong> 鯉渕学園農業栄養専門学校（茨城県水戸市）
+                <strong>会場:</strong> オフライン開催（茨城県水戸市）
               </p>
-              <p className="text-base md:text-lg">
-                <strong>参加:</strong> 現地参加
-              </p>
-              <p className="text-2xl md:text-3xl font-bold text-accent-yellow mt-4">
+              <p className="text-2xl md:text-3xl font-bold text-accent-orange mt-4">
                 参加費：無料
               </p>
             </div>
@@ -64,9 +75,9 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#application"
-              className="inline-block bg-accent-yellow hover:bg-accent-yellow/90 text-base-darkGray font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-2xl"
+              className="inline-block bg-accent-orange hover:bg-accent-yellow text-base-darkGray font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-2xl"
             >
-              今すぐ申し込む
+              ワークショップに申し込む
             </a>
             <a
               href="#about"

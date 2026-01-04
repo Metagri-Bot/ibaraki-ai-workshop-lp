@@ -1,52 +1,29 @@
-const audiences = [
-  {
-    icon: '💻',
-    text: 'プログラミング未経験だけどAI技術に興味がある',
-  },
-  {
-    icon: '🌱',
-    text: '地域課題解決に関心がある学生・社会人',
-  },
-  {
-    icon: '🏖️',
-    text: 'ワーケーションで新しい働き方を体験したい',
-  },
-  {
-    icon: '🚀',
-    text: '自分のアイデアを社会実装まで実現したい',
-  },
-  {
-    icon: '👥',
-    text: 'Z世代のコミュニティに参加したい',
-  },
-  {
-    icon: '🗾',
-    text: '茨城の魅力を体感しながら学びたい',
-  },
-];
-
 export default function TargetAudience() {
   return (
     <section id="about" className="py-20 bg-base-lightGray">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-base-darkGray">
-          こんな方に<span className="text-primary">おすすめ</span>
-        </h2>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* リード文 */}
+        <div className="text-center mb-12">
+          <p className="text-xl md:text-2xl text-base-darkGray leading-relaxed mb-6">
+            「AIを使ってみたいけれど、難しそう…」
+          </p>
+          <p className="text-xl md:text-2xl text-base-darkGray leading-relaxed mb-6">
+            「アプリを作ってみたいけれど、プログラミングなんてできない…」
+          </p>
+          <p className="text-2xl md:text-3xl font-bold text-primary mb-8">
+            そう諦めていませんか？
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {audiences.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-primary"
-            >
-              <div className="flex items-start gap-4">
-                <span className="text-4xl">{item.icon}</span>
-                <p className="text-base text-base-darkGray leading-relaxed">
-                  {item.text}
-                </p>
-              </div>
-            </div>
-          ))}
+        {/* 解決の提示 */}
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg border-l-4 border-accent-orange">
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+            技術の進化は、<span className="font-bold text-primary">「学習する時代」</span>から<span className="font-bold text-accent-orange">「AIに任せる時代」</span>へと変わりました。
+          </p>
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            専門知識はもう必要ありません。<br className="hidden md:inline" />
+            必要なのは、あなたの<span className="font-bold text-primary">「こんなものがあったらいいな」</span>というアイデアだけです。
+          </p>
         </div>
       </div>
     </section>
