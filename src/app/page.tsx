@@ -15,7 +15,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": "AIでできることを知り、体験する場「Vibe Codingワークショップ」",
-  "description": "プログラミング不要。AIと話すだけ。2026年の新トレンド「Vibe Coding」を体験しよう。あなたのアイデアが、たった2時間で形になるワークショップ。40〜50代からのリスキリングに最適。",
+  "description": "プログラミング不要。AIと対話するだけ。2026年の新トレンド「Vibe Coding」を体験しよう。あなたのアイデアが、たった2時間で形になるワークショップ。40〜50代からのリスキリングに最適。",
   "startDate": "2026-02-05T13:00:00+09:00",
   "endDate": "2026-02-05T15:00:00+09:00",
   "eventStatus": "https://schema.org/EventScheduled",

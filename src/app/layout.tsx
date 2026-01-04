@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
   // OGP設定
   openGraph: {
-    title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
+    title: 'Vibe Codingワークショップ | プログラミング不要・AIと対話するだけ',
     description: '【40〜50代からのリスキリング】プログラミング不要。AIと対話するだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
     url: 'https://ibaraki-ai-hackathon.metagri-labo.com/',
     siteName: 'MetagriLabo',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
+    title: 'Vibe Codingワークショップ | プログラミング不要・AIと対話するだけ',
     description: '【40〜50代からのリスキリング】プログラミング不要。AIと対話するだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
     images: ['http://metagri-labo.com/wp-content/uploads/2026/01/0a36b3f986ca134fa88b2c50dda775c1.png'],
   },

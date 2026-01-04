@@ -32,7 +32,7 @@ export default function Hero() {
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             プログラミング不要。
             <br />
-            <span className="text-accent-orange">AIと話すだけ。</span>
+            <span className="text-accent-orange">AIと対話するだけ。</span>
           </h1>
 
           {/* サブコピー */}
