@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'MetagriLabo',
     images: [
       {
-        url: 'http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg',
+        url: 'http://metagri-labo.com/wp-content/uploads/2026/01/0a36b3f986ca134fa88b2c50dda775c1.png',
         width: 1200,
         height: 630,
         alt: 'Vibe Codingワークショップ メインビジュアル',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vibe Codingワークショップ | プログラミング不要・AIと話すだけ',
     description: '【40〜50代からのリスキリング】プログラミング不要。AIと話すだけでアプリを作る新体験。2026年2月5日開催・参加費無料',
-    images: ['http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg'],
+    images: ['http://metagri-labo.com/wp-content/uploads/2026/01/0a36b3f986ca134fa88b2c50dda775c1.png'],
   },
 
   // ファビコン

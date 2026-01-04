@@ -30,7 +30,7 @@ const structuredData = {
       "addressCountry": "JP"
     }
   },
-  "image": "http://metagri-labo.com/wp-content/uploads/2025/12/89d3904632c8779b94ca6ffeccbb27c3.jpeg",
+  "image": "http://metagri-labo.com/wp-content/uploads/2026/01/0a36b3f986ca134fa88b2c50dda775c1.png",
   "organizer": [
     {
       "@type": "Organization",

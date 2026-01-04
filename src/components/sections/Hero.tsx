@@ -7,7 +7,7 @@ export default function Hero() {
       {/* スマホ用: 9:16縦型 */}
       <div className="relative w-full aspect-[9/16] md:hidden">
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/12/7c650964bb610c2972416d9a7e6554a6.jpeg"
+          src="http://metagri-labo.com/wp-content/uploads/2026/01/0a36b3f986ca134fa88b2c50dda775c1.png"
           alt="AIワークショップ - Vibe Coding体験"
           fill
           className="object-cover object-center"
@@ -17,7 +17,7 @@ export default function Hero() {
       {/* PC用: 21:9横型 */}
       <div className="relative w-full aspect-[21/9] hidden md:block">
         <Image
-          src="http://metagri-labo.com/wp-content/uploads/2025/12/bb79118101a1a97ac60e90a1b182020c.jpeg"
+          src="http://metagri-labo.com/wp-content/uploads/2026/01/e212e25f00487e62ea4d8512e8c2f372.png"
           alt="AIワークショップ - Vibe Coding体験"
           fill
           className="object-cover object-center"
